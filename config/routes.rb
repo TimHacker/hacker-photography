@@ -1,4 +1,8 @@
 HackerPhotography::Application.routes.draw do
+  resources :photos
+
+  resources :albums
+
   get "pages/home"
 
   get "pages/contact"

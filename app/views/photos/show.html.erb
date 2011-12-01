@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @photo.name %>
+</p>
+
+<p>
+  <b>Sort order:</b>
+  <%= @photo.sort_order %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @photo.date %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @photo.url %>
+</p>
+
+<p>
+  <b>Alternate description:</b>
+  <%= @photo.alternate_description %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @photo.height %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%= @photo.width %>
+</p>
+
+<p>
+  <b>Album:</b>
+  <%= @photo.album_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>

@@ -29,18 +29,34 @@ body {
 }
 
 .siteWrapper {
-	/*margin: 100px auto;*/
 	background: none;
-	width: 911px;
+	width: 1120px;
 	min-height: 399px;
 }
 
-.leftNavigation {
-	margin-top: 186px;
+.leftNavigation {	
 	float:left;
 	width: 200px;
-	height: 100%;
+	height: 565px;
 	background: none;
+	margin-right: 70px;
+	font-size: 1.05em;
+	
+	/* flexbox, por favor */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+ 
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  
+  display: box;
+  box-orient: horizontal;
+  box-pack: center;
+  box-align: center;
 }
 
 .leftNavigation ul {
