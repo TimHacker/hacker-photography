@@ -4,16 +4,38 @@
 
 .siteWrapper {
 	margin: 100px auto;
-	background-color: #E6DAF0;
-	width: 800px;
+	background: none;
+	width: 911px;
 	min-height: 399px;
 }
 
 .leftNavigation {
-	background-color: grey;
+	margin-top: 186px;
 	float:left;
 	width: 200px;
 	height: 100%;
+	background: none;
+}
+
+.leftNavigation ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.leftNavigation li {
+	list-style:none;
+}
+
+.leftNavigation li a {
+	display:block;
+	text-align: center;
+	text-decoration: none;
+	color: #D2D2D2;
+}
+
+.leftNavigation li a:hover {
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .photoBlock

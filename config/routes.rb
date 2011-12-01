@@ -1,4 +1,10 @@
 HackerPhotography::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/contact"
+
+  get "pages/albums"
+
   get "welcome/index"
 
   # The priority is based upon order of creation:
