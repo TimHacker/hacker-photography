@@ -2,19 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.body {
+body {
 	display: box;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	-moz-box-pack: center;
+	-moz-box-align: center;
   	box-orient: horizontal;
 	/* The content of the body is horizontally centered */
 	box-pack: center;
   	/* and vertically as well ... \o/ */
- 	 box-align: center;
-	 width: 100%;
+ 	box-align: center;
+	width: 100%;
   	height : 100%;
+	margin: 0px;
+	padding: 0px;
 }
 
 .siteWrapper {
-	margin: 100px auto;
+	/*margin: 100px auto;*/
 	background: none;
 	width: 911px;
 	min-height: 399px;
