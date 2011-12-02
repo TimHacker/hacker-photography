@@ -41,22 +41,10 @@ body {
 	background: none;
 	margin-right: 70px;
 	font-size: 1.05em;
-	
-	/* flexbox, por favor */
-  display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
- 
-  display: -moz-box;
-  -moz-box-orient: horizontal;
-  -moz-box-pack: center;
-  -moz-box-align: center;
-  
-  display: box;
-  box-orient: horizontal;
-  box-pack: center;
-  box-align: center;
+}
+
+.leftNavigation nav {
+	margin-top: 227px;
 }
 
 .leftNavigation ul {

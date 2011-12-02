@@ -2,7 +2,10 @@
 <html>
 <head>
   <title>Kate Hacker</title>
-  <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag    "Application-Screen" %>
+	<!--[if IE]>
+	  <%= stylesheet_link_tag    "Application-IE" %>
+	<![endif]-->
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
