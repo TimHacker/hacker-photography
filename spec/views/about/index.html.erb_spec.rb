@@ -1,5 +1,5 @@
 require 'spec_helper'
 
-describe "pages/albums.html.erb" do
+describe "about/index.html.erb" do
   pending "add some examples to (or delete) #{__FILE__}"
 end

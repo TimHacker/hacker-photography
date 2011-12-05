@@ -1,15 +1,16 @@
 HackerPhotography::Application.routes.draw do
+  get "contact/index"
+
+  get "about/index"
+
+  get "home/index"
+  
+  match '/contact', :to => 'contact#index'
+  match '/about', :to => 'about#index'
+
   resources :photos
 
   resources :albums
-
-  get "pages/home"
-
-  get "pages/contact"
-
-  get "pages/albums"
-
-  get "welcome/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -60,7 +61,7 @@ HackerPhotography::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'welcome#index'
+  root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 

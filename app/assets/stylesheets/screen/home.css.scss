@@ -17,13 +17,13 @@ body {
 	-moz-box-orient: horizontal;
 	-moz-box-pack: center;
 	-moz-box-align: center;
-  	box-orient: horizontal;
+	box-orient: horizontal;
 	/* The content of the body is horizontally centered */
 	box-pack: center;
-  	/* and vertically as well ... \o/ */
- 	box-align: center;
+	/* and vertically as well ... \o/ */
+	box-align: center;
 	width: 100%;
-  	height : 100%;
+	height : 100%;
 	margin: 0px;
 	padding: 0px;
 }
@@ -43,13 +43,11 @@ body {
 	font-size: 1.05em;
 }
 
-.leftNavigation nav {
-	margin-top: 227px;
-}
-
 .leftNavigation ul {
+	
 	padding: 0px;
 	margin: 0px;
+	margin-top: 227px;
 }
 
 .leftNavigation li {
@@ -73,6 +71,16 @@ body {
 .photoBlock
 {
 	float:left;
+}
+
+.signature {
+	position: absolute;
+	bottom: 27px;
+	font-size: 8em;
+	left: 0px;
+	color: #D2D2D2;
+	font-family: Palantino Linotype, Book Antiqua, Palatino, serif;
+	font-style: italic;
 }
 
 .clear {
