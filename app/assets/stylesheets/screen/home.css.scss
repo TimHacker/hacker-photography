@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@mixin drop-shadow($offx: 5px, $offy: 5px, $blur: 15px, $color: #888) {
+	-moz-box-shadow: $offx $offy $blur #888;
+	-webkit-box-shadow: $offx $offy $blur #888;
+	box-shadow: $offx $offy $blur #888;
+}
+
 html {
 	width: 100%;
 	height : 100%;
@@ -28,8 +34,23 @@ body {
 	padding: 0px;
 }
 
+header {
+	overflow: auto;
+	float: left;
+}
+
+section {
+	float: left;
+	height: 565px;
+	width: 850px;
+	@include drop-shadow();
+}
+
+article {
+	padding: 20px 50px;
+}
+
 .siteWrapper {
-	background: none;
 	width: 1120px;
 	min-height: 399px;
 }
@@ -68,19 +89,18 @@ body {
 	text-decoration: none;
 }
 
-.photoBlock
-{
-	float:left;
-}
 
 .signature {
 	position: absolute;
-	bottom: 27px;
+	bottom: 21px;
 	font-size: 8em;
 	left: 0px;
 	color: #D2D2D2;
 	font-family: Palantino Linotype, Book Antiqua, Palatino, serif;
 	font-style: italic;
+	margin: 0px;
+	font-weight:normal;
+	line-height: 0.8;
 }
 
 .clear {

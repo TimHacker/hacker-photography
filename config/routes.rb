@@ -1,10 +1,5 @@
 HackerPhotography::Application.routes.draw do
-  get "contact/index"
 
-  get "about/index"
-
-  get "home/index"
-  
   match '/contact', :to => 'contact#index'
   match '/about', :to => 'about#index'
 

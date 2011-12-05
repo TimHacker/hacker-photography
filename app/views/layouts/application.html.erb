@@ -12,9 +12,12 @@
 <body>
 
 <div class="siteWrapper">
-<%= render 'layouts/header' %>
-<%= yield %>
-
+	<%= render 'layouts/header' %>
+	<section>
+		<%= yield %>
+	</section>
+	<div class="clear">
+	</div>
 </div>
 
 </body>
