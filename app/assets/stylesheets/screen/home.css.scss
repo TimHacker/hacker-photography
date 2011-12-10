@@ -2,10 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@mixin drop-shadow($offx: 5px, $offy: 5px, $blur: 15px, $color: #888) {
-	-moz-box-shadow: $offx $offy $blur #888;
+@mixin drop-shadow($offx: 4px, $offy: 4px, $blur: 15px, $color: #888, $opacity: 0.1) {
+	/*-moz-box-shadow: $offx $offy $blur #888;
 	-webkit-box-shadow: $offx $offy $blur #888;
-	box-shadow: $offx $offy $blur #888;
+	box-shadow: $offx $offy $blur #888;*/
+	
+	-webkit-box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
+	-moz-box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
+	box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
 }
 
 html {
@@ -62,33 +66,28 @@ article {
 	background: none;
 	margin-right: 70px;
 	font-size: 1.05em;
+	ul {
+		
+		padding: 0px;
+		margin: 0px;
+		margin-top: 227px;
+	}
+	li {
+		list-style:none;
+		a {
+			display:block;
+			text-align: center;
+			text-decoration: none;
+			color: #D2D2D2;
+			font-family: Arial, Helvetica, 'sans-serif';
+			padding: 4px;
+			&:hover {
+				font-weight: bold;
+				text-decoration: none;
+			}
+		}
+	}
 }
-
-.leftNavigation ul {
-	
-	padding: 0px;
-	margin: 0px;
-	margin-top: 227px;
-}
-
-.leftNavigation li {
-	list-style:none;
-}
-
-.leftNavigation li a {
-	display:block;
-	text-align: center;
-	text-decoration: none;
-	color: #D2D2D2;
-	font-family: Arial, Helvetica, 'sans-serif';
-	padding: 4px;
-}
-
-.leftNavigation li a:hover {
-	font-weight: bold;
-	text-decoration: none;
-}
-
 
 .signature {
 	position: absolute;
