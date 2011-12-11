@@ -15,6 +15,9 @@
   <%= @album.created_date %>
 </p>
 
-
 <%= link_to 'Edit', edit_album_path(@album) %> |
 <%= link_to 'Back', albums_path %>
+
+<% @album.album_photos.each do |photo| %>
+   <%= image_tag(photo.url, :size => "850x565", :alt => photo.alternate_description) %>
+<% end %>
