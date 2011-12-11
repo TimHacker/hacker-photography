@@ -4,11 +4,10 @@
 			<li><%= link_to "home", root_path %></li>
 			<li><%= link_to "about", about_path %></li>
 			<li><%= link_to "edit albums", albums_path, :class => 'albumLink' %></li>
-			<li class="albumLink">albums</li>
-				
-				<ul class="albumNavigation">
+			<li class="albumLink"><a href="#" title="albums">albums</a></li>
+				<ul class="albumNavigation" style="display:none">
 					<% Album.all.each do |album| %>
-					<li><%= link_to album.name, albums_path %></li>
+					<li><%= link_to album.name, album %></li>
 					<% end %>
 				</ul>
 			<li><%= link_to "contact", contact_path %></li>
