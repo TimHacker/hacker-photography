@@ -3,7 +3,7 @@
 		<ul class="mainNavigation">		
 			<li<%=' class=highlighted' if params[:controller] == "home" %>><%= link_to "home", root_path %></li>
 			<li<%=' class=highlighted' if params[:controller] == "about" %>><%= link_to "about", about_path %></li>
-			<li<%=' class=highlighted' if params[:controller] == "albums" %>><%= link_to "edit albums", albums_path, :class => 'albumLink' %></li>
+			<li<%=' class=highlighted' if params[:controller] == "albums" %>><%= link_to "edit albums", albums_path %></li>
 			<li class="albumLink"><a href="#" title="albums">albums</a></li>
 				<ul class="albumNavigation" style="display:none">
 					<% Album.all.each do |album| %>
