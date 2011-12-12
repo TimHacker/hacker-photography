@@ -46,7 +46,7 @@ header {
 section {
 	float: left;
 	height: 565px;
-	width: 850px;
+	width: 810px;
 	@include drop-shadow();
 }
 
@@ -79,7 +79,7 @@ article {
 		list-style:none;
 		a {
 			display:block;
-			text-align: center;
+			text-align: left;
 			text-decoration: none;
 			color: #D2D2D2;
 			font-family: Arial, Helvetica, 'sans-serif';
@@ -97,6 +97,14 @@ article {
 	
 }
 
+ul.albumNavigation.highlighted {
+	display: block;
+	li a {
+		margin-left: 10px;
+		font-size: 0.9em;
+	}
+}
+
 .signature {
 	position: absolute;
 	bottom: 21px;
@@ -109,6 +117,42 @@ article {
 	font-weight:normal;
 	line-height: 0.8;
 }
+
+#imageSlider {
+	height: 565px;
+	width: 810px;
+}
+
+.bx-window, .bx-wrapper {
+	width: 810px;
+}
+
+.bx-window {
+	ul, li {
+		padding: 0px;
+		margin: 0px;
+		height: 565px;
+	}
+}
+
+.bx-prev {
+	position: absolute;
+	top: 275px;
+	left: -50px;
+	text-decoration: none;
+	font-size: 5em;
+	color: #D2D2D2;
+}
+
+.bx-next {
+	position: absolute;
+	top: 275px;
+	right: -50px;
+	text-decoration: none;
+	font-size: 5em;
+	color: #D2D2D2;
+}
+
 
 .clear {
 	clear: both;

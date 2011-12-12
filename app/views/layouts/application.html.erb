@@ -8,6 +8,15 @@
 	<![endif]-->
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <script src="http://bxslider.com/sites/default/files/jquery.bxSlider.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+	  $('#imageSlider').bxSlider({
+	  	prevText: "<",
+		nextText: ">"
+	  });
+	});
+  </script>
 </head>
 <body>
 
