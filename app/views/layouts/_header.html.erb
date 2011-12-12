@@ -8,7 +8,7 @@
 			<li class="albumLink<%=" highlighted" if params[:controller] == "albums" %>"><a href="#" title="albums">albums</a></li>
 				<ul class="albumNavigation<%=" highlighted" if params[:controller] == "albums" %>" style="display:none">
 					<% Album.all.each do |album| %>
-					<li<%=" class='highlighted'" if params[:id] == album.id %>><%= link_to album.name, album %><%=album.id%></li>
+					<li<%=" class='highlighted'" if params[:id] == album.id.to_s %>><%= link_to album.name, album %></li>
 					<% end %>
 				</ul>
 			<li<%=" class='highlighted'" if params[:controller] == "contact" %>><%= link_to "contact", contact_path %></li>
