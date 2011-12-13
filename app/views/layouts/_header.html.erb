@@ -1,17 +1,18 @@
 <header>
 	<nav class="leftNavigation">
 		<ul class="mainNavigation">		
-			<li<%=" class='highlighted'" if params[:controller] == "home" %>><%= link_to_unless_current "home", root_path %></li>
-			<li<%=" class='highlighted'" if params[:controller] == "about" %>><%= link_to "about", about_path %></li>
-			<li<%=" class='highlighted'" if params[:controller] == "albums" %>><%= link_to "edit albums", albums_path %></li>
-			<li<%=" class='highlighted'" if params[:controller] == "photos" %>><%= link_to "edit photos", photos_path %></li>
-			<li class="albumLink<%=" highlighted" if params[:controller] == "albums" %>"><a href="#" title="albums">albums</a></li>
-				<ul class="albumNavigation<%=" highlighted" if params[:controller] == "albums" %>" style="display:none">
+			<li><%= link_to_unless_current('home', root_path) { link_to('home', '#', :class => 'current') } %></li>
+			<li><%= link_to_unless_current('about', about_path) { link_to('about', '#', :class => 'current') } %></li>
+			<li><%= link_to_unless_current("edit albums", albums_path) { link_to('editing albums', '#', :class => 'current') } %></li>
+			<li><%= link_to_unless_current("edit photos", photos_path) { link_to('editing photos', '#', :class => 'current') } %></li>
+			<li class="albumLink"><a href="#" class="<%=' current' if params[:controller] == "albums" %>" title="albums">albums</a></li>
+				<ul class="albumNavigation<%=" current" if params[:controller] == "albums" %>" style="display:none">
 					<% Album.all.each do |album| %>
-					<li<%=" class='highlighted'" if params[:id] == album.id.to_s %>><%= link_to album.name, album %></li>
+					<li><%= link_to_unless_current(album.name, album) { link_to(album.name, '#', :class => 'current') } %></li>
+					<!--<li<%=" class='highlighted'" if params[:id] == album.id.to_s %>><%= link_to album.name, album %></li>-->
 					<% end %>
 				</ul>
-			<li<%=" class='highlighted'" if params[:controller] == "contact" %>><%= link_to "contact", contact_path %></li>
+			<li><%= link_to_unless_current("contact", contact_path) { link_to('contact', '#', :class => 'current') } %></li>
 		</ul>
 	</nav>
 	<h1 class="signature">Kate Hacker</h1>

@@ -5,4 +5,4 @@ $ ->
 	$(".albumLink").click ->	
 		$('.albumNavigation').slideToggle 'slow'
 		
-	$("ul.albumNavigation.highlighted").show()
+	$("ul.albumNavigation.current").show()

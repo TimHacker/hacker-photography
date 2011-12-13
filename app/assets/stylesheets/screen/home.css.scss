@@ -91,13 +91,13 @@ article {
 		}
 		
 	}
-	li.highlighted a {
+	li a.current {
 			font-weight: bold;
 		}
 	
 }
 
-ul.albumNavigation.highlighted {
+ul.albumNavigation {
 	display: block;
 	li a {
 		margin-left: 10px;
