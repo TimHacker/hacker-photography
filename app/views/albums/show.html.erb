@@ -21,7 +21,7 @@
 <%= link_to 'Back', albums_path %>
 -->
 <ul id="imageSlider">
-<% @album.album_photos.each do |photo| %>
+<% @album.photos.each do |photo| %>
   <li>
    <%= image_tag(photo.url, :size => "810x565", :alt => photo.alternate_description) %>
    </li>
