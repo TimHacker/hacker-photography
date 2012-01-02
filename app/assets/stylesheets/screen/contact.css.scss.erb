@@ -1,0 +1,29 @@
+// Place all the styles related to the contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@mixin drop-shadow($offx: 4px, $offy: 4px, $blur: 15px, $color: #888, $opacity: 0.1) {
+	-webkit-box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
+	-moz-box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
+	box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
+}
+
+.contact {
+	text-align: center;
+	position: relative;
+	padding: 0;
+	
+	.overlay {
+		width: 300px;
+		position:absolute;
+		background: transparent url(<%= asset_path 'transparentbackground.png' %>) repeat fixed center;
+		
+		margin-left: 100px;
+		padding-bottom: 30px;
+		@include drop-shadow();
+		h1 {
+			margin-top: 30px;
+		}
+	}
+}
+

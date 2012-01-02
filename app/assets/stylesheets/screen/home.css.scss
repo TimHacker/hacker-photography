@@ -3,10 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @mixin drop-shadow($offx: 4px, $offy: 4px, $blur: 15px, $color: #888, $opacity: 0.1) {
-	/*-moz-box-shadow: $offx $offy $blur #888;
-	-webkit-box-shadow: $offx $offy $blur #888;
-	box-shadow: $offx $offy $blur #888;*/
-	
 	-webkit-box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
 	-moz-box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
 	box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
