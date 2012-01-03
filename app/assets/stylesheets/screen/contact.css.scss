@@ -16,7 +16,7 @@
 	.overlay {
 		width: 300px;
 		position:absolute;
-		background: transparent url(<%= asset_path 'transparentbackground.png' %>) repeat fixed center;
+		background: transparent image-url('transparentbackground.png') repeat fixed center;
 		
 		margin-left: 100px;
 		padding-bottom: 30px;
