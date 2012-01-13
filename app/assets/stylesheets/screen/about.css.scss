@@ -1,3 +1,26 @@
 // Place all the styles related to the about controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about {
+	padding: 0px;
+	position: relative;
+	.info {
+		position:absolute;
+		margin-left: 320px;
+		width:540px;
+		.curly {
+			float: left;
+			font-size: 20em;
+			margin-top: 100px;
+			width: 120px;
+			font-family: "Courier New", Courier, monospace;
+			margin-left: -70px;
+		}
+		.curlyContent {
+			float: left;
+			width: 300px;
+		}
+	}
+	
+}
