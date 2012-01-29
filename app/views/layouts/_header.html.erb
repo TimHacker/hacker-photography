@@ -15,5 +15,5 @@
 			<li><%= link_to_unless_current("contact", contact_path) { link_to('contact', '#', :class => 'current') } %></li>
 		</ul>
 	</nav>
-	<h1 class="signature">Kate Hacker</h1>
+	<%= image_tag("Signature.png", :size => "600x100", :alt => "signature", :class => 'signature') %>
 </header>
