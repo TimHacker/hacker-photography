@@ -33,12 +33,12 @@ gem 'jquery-rails'
 
 gem "thin"
 
-group :development do
-  gem "eventmachine",  '1.0.0.beta.4.1'
-end
-group :production do
-  gem "eventmachine"
-end
+#group :development do
+#  gem "eventmachine",  '1.0.0.beta.4.1'
+#end
+#group :production do
+#  gem "eventmachine"
+#end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
