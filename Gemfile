@@ -33,6 +33,8 @@ gem 'jquery-rails'
 
 gem "thin"
 
+gem "eventmachine",  '1.0.0.beta.4.1'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
