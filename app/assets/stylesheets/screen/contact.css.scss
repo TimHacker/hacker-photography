@@ -17,7 +17,7 @@
 		width: 300px;
 		position:absolute;
 		background: transparent image-url('transparentbackground.png') repeat fixed center;
-		
+		font-family: 'Old Standard TT', serif;
 		margin-left: 100px;
 		padding-bottom: 30px;
 		@include drop-shadow();
