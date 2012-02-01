@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@mixin drop-shadow($offx: 4px, $offy: 4px, $blur: 15px, $color: #666, $opacity: 0.4) {
+@mixin drop-shadow($offx: 6px, $offy: 6px, $blur: 15px, $color: #666, $opacity: 0.4) {
 	-webkit-box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
 	-moz-box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
 	box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
