@@ -4,24 +4,4 @@
 
 .about {
 	padding: 0px;
-	position: relative;
-	.info {
-		position:absolute;
-		margin-left: 320px;
-		width:540px;
-		margin-top: 30px;
-		.curly {
-			float: left;
-			font-size: 20em;
-			margin-top: 100px;
-			width: 120px;
-			font-family: "Courier New", Courier, monospace;
-			margin-left: -70px;
-		}
-		.curlyContent {
-			float: left;
-			width: 300px;
-		}
-	}
-	
 }
