@@ -13,8 +13,8 @@
   <script type="text/javascript">
 	$(document).ready(function(){
 	  $('#imageSlider').bxSlider({
-	  	prevImage: "<%=image-url('ChevronLeft.png')%>",
-		nextImage: "<%=image-url('ChevronRight.png')%>",
+	  	prevImage: "<%= asset_path('ChevronLeft.png')%>",
+		nextImage: "<%= asset_path('ChevronRight.png')%>",
 		hideControlOnEnd: true,
 		infiniteLoop: false
 	  });
