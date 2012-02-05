@@ -2,28 +2,51 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@mixin drop-shadow($offx: 4px, $offy: 4px, $blur: 15px, $color: #888, $opacity: 0.1) {
-	-webkit-box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
-	-moz-box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
-	box-shadow: $offx $offy $blur rgba(50, 50, 50, $opacity);
-}
-
 .contact {
-	text-align: center;
-	position: relative;
 	padding: 0;
 	
-	.overlay {
-		width: 300px;
-		position:absolute;
-		background: transparent image-url('transparentbackground.png') repeat fixed center;
+	.information {
+		width: 455px;
+		float: left;
 		font-family: 'Old Standard TT', serif;
-		margin-left: 100px;
-		padding-bottom: 30px;
-		@include drop-shadow();
-		h1 {
-			margin-top: 30px;
+		font-size: 1.5em;
+		padding: 55px 50px 25px;
+		p {
+			line-height: 1.2;
+			margin-bottom: 0.6em;
 		}
+		a {
+			font-style: italic;
+			color: black;
+			text-decoration: none;
+			float: left;
+			margin-top: 8px;
+			margin-left: 14px;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.email {
+			padding-bottom: 25px;
+		}
+		.icons {
+			float: left;
+			margin-left: 20px;
+		}
+		.twitter {
+			padding: 8px 0 16px;
+		}
+		.facebook {
+			padding-bottom: 25px;
+		}
+		.tumblr {
+			padding-top: 8px;
+		}
+	}
+	.stamps {
+		width: 255px;
+		height: 565px;
+		float: left;
 	}
 }
 
