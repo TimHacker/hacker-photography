@@ -24,7 +24,7 @@
 <% @album.photos.each do |photo| %>
   <li>
    <!--<%= image_tag(photo.url, :size => "810x565", :alt => photo.alternate_description) %> -->
-   photo.sort_order
+  photo sort order = <%= photo.sort_order %>
    </li>
 <% end %>
 </ul>
