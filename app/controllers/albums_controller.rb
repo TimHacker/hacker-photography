@@ -2,7 +2,7 @@ class AlbumsController < ApplicationController
   # GET /albums
   # GET /albums.json
   def index
-    @albums = Album.all(:order => 'sort_order')
+    @albums = Album.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +13,7 @@ class AlbumsController < ApplicationController
   # GET /albums/1
   # GET /albums/1.json
   def show
-    @album = Album.find(params[:id], :order => 'sort_order')
+    @album = Album.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
