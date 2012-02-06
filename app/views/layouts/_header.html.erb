@@ -5,13 +5,13 @@
 			<li><%= link_to_unless_current('about', about_path) { link_to('about', '#', :class => 'current') } %></li>
 			<li class="hiddenAlbumLink"><%= link_to_unless_current("edit albums", albums_path) { link_to('editing albums', '#', :class => 'current') } %></li>
 			<li class="hiddenPhotoLink"><%= link_to_unless_current("edit photos", photos_path) { link_to('editing photos', '#', :class => 'current') } %></li>
-			<li class="albumLink"><a href="#" class="<%=' current' if params[:controller] == "albums" %>" title="albums">albums</a>
-				<ul class="albumNavigation<%=" current" if params[:controller] == "albums" %>" style="display:none"></ul>
+			<li class="albumLink"><a href="#" class="<%=' current' if params[:controller] == "albums" %>" title="albums">albums</a></li>
+				<ul class="albumNavigation<%=" current" if params[:controller] == "albums" %>" style="display:none">
 					<% Album.all.each do |album| %>
 					<li><%= link_to_unless_current(album.name, album) { link_to(album.name, '#', :class => 'current') } %></li>
 					<!--<li<%=" class='highlighted'" if params[:id] == album.id.to_s %>><%= link_to album.name, album %></li>-->
 					<% end %>
-			</li>
+				</ul>
 			<li><%= link_to_unless_current("contact", contact_path) { link_to('contact', '#', :class => 'current') } %></li>
 		</ul>
 	</nav>
