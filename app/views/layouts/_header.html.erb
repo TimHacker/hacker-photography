@@ -7,7 +7,7 @@
 			<li class="hiddenPhotoLink"><%= link_to_unless_current("edit photos", photos_path) { link_to('editing photos', '#', :class => 'current') } %></li>
 			<li class="albumLink"><a href="#" class="<%=' current' if params[:controller] == "albums" %>" title="albums">albums</a></li>
 				<ul class="albumNavigation<%=" current" if params[:controller] == "albums" %>" style="display:none">
-					<% Album.all.each do |album| %>
+					<% Album.all(:order => 'sort_order').each do |album| %>
 					<li><%= link_to_unless_current(album.name, album) { link_to(album.name, '#', :class => 'current') } %></li>
 					<!--<li<%=" class='highlighted'" if params[:id] == album.id.to_s %>><%= link_to album.name, album %></li>-->
 					<% end %>
