@@ -23,7 +23,8 @@
 <ul id="imageSlider">
 <% @album.photos.each do |photo| %>
   <li>
-   <%= image_tag(photo.url, :size => "810x565", :alt => photo.alternate_description) %>
+   <!--<%= image_tag(photo.url, :size => "810x565", :alt => photo.alternate_description) %> -->
+   photo.sort_order
    </li>
 <% end %>
 </ul>
