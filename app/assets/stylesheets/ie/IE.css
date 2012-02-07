@@ -1,3 +1,7 @@
 .siteWrapper {
 	margin: 100px auto 0px auto;
 }
+
+body {
+	height: auto;
+}
