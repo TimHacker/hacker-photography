@@ -20,7 +20,8 @@ HackerPhotography::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
   
-  config.consider_all_requests_local       = true
+  config.consider_all_requests_local = true
+  config.log_level = :debug
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
