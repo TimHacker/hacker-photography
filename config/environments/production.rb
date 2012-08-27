@@ -23,6 +23,9 @@ HackerPhotography::Application.configure do
   config.consider_all_requests_local = true
   config.log_level = :debug
   
+  config.assets.precompile += %w( Application-Screen.css )
+
+  
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
 
