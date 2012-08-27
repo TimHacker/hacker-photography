@@ -22,6 +22,9 @@ HackerPhotography::Application.configure do
   
   config.consider_all_requests_local = true
   config.log_level = :debug
+  
+  # Expands the lines which load the assets
+  config.assets.debug = true
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
