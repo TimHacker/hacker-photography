@@ -57,8 +57,4 @@ HackerPhotography::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
-  
-  # Show full error reports and disable caching
-  #defaults: true for development, false for production
-  config.action_controller.consider_all_requests_local = true
 end
