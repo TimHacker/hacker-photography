@@ -33,9 +33,9 @@ gem 'jquery-rails'
 
 gem "thin"
 
-#group :development do
-#  gem "eventmachine",  '1.0.0.beta.4.1'
-#end
+group :development do
+  gem "eventmachine",  '1.0.0.rc.4'
+end
 #group :production do
 #  gem "eventmachine"
 #end

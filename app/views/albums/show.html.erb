@@ -20,6 +20,8 @@
 <%= link_to 'Edit', edit_album_path(@album) %> |
 <%= link_to 'Back', albums_path %>
 -->
+
+<!--
 <ul id="imageSlider">
 <% @album.photos.order('sort_order').each do |photo| %>
   <li>
@@ -27,3 +29,11 @@
    </li>
 <% end %>
 </ul>
+-->
+<div class="carousel" data-transition="slide">
+  <% @album.photos.order('sort_order').each do |photo| %>
+    <div>
+      <%= image_tag(photo.url, :size => "810x565", :alt => photo.alternate_description) %>   
+    </div>
+  <% end %>
+</div>
