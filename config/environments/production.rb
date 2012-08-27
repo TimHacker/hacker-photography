@@ -23,9 +23,6 @@ HackerPhotography::Application.configure do
   config.consider_all_requests_local = true
   config.log_level = :debug
   
-  Sass::Plugin.options[:never_update] = true
-
- 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
 
