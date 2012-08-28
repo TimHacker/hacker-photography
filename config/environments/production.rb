@@ -20,8 +20,9 @@ HackerPhotography::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
   
-  config.consider_all_requests_local = true
-  config.log_level = :debug
+  # Debug requests
+  # config.consider_all_requests_local = true
+  # config.log_level = :debug
   
   config.assets.precompile += %w( Application-Screen.css )
   config.assets.precompile += %w( Application-IE.css )

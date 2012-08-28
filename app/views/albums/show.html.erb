@@ -29,11 +29,13 @@
    </li>
 <% end %>
 </ul>
+
+:size => "810x565",
 -->
 <div class="carousel" data-transition="slide">
   <% @album.photos.order('sort_order').each do |photo| %>
     <div>
-      <%= image_tag(photo.url, :size => "810x565", :alt => photo.alternate_description) %>   
+      <%= image_tag(photo.url, :alt => photo.alternate_description) %>   
     </div>
   <% end %>
 </div>

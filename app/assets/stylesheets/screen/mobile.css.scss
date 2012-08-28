@@ -1,0 +1,36 @@
+// Mobile responsive	
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$break-small: 640px;
+$break-large: 1024px;
+
+@media screen and (max-width: $break-small) {
+	.siteWrapper {
+		width: 100%;
+	
+		header {
+			float: none;
+			
+			.leftNavigation {
+				width: 100%;
+				height: auto;
+				
+				.mainNavigation {
+					margin-top: 0px;
+				}
+			}
+		}
+		
+		section {
+			width: 100%;
+			
+			.carousel img {
+				max-width: 100%;
+			}
+		}
+	
+	
+	}
+	
+	
+}	
